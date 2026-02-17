@@ -5,13 +5,13 @@
 class Cdns < Formula
   desc "Linux DNS Management Made Simple"
   homepage "https://github.com/junevm/cdns"
-  version "1.0.3"
+  version "1.1.0"
   license "MIT"
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/junevm/cdns/releases/download/v1.0.3/cdns_1.0.3_Linux_amd64.tar.gz"
-    sha256 "a685cf01951f6c76c01c93346bd925d0c64afb9283fed081326f12644cc1dc75"
+    url "https://github.com/junevm/cdns/releases/download/v1.1.0/cdns_1.1.0_Linux_amd64.tar.gz"
+    sha256 "e62fc4f90f334320d9b0a9a07c752f2cf783aab197d370ca239fa1919594029c"
     def install
       bin.install "cdns"
     end
